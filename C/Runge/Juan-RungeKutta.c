@@ -31,6 +31,12 @@ int main(void)
     //condiciones iniciales
     Runge2_y=1.0;
     Runge4_y=1.0;
+    for (int i=0; i<numeroPasos; i++)
+    {
+        printf("%f %.15e\n", t,Runge2_y);
+        Runge2_y+=RungePaso2(paso,t,RungePaso2,func_y);
+        
+    }
  
     
 }
@@ -42,4 +48,5 @@ double RungePaso2(double paso,double t, double y, derivative dev)
     k1=dev(t,y);
     k2=dev(t+paso,y+paso*k1);
     paso_y=0.5*(k1+k2)*paso;
+    return paso;
 }

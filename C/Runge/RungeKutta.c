@@ -18,8 +18,8 @@ int main(void){
   int n_step = (int)(T/step);
 
   t=0.0;
-  y_RK2=1.0;
-  y_RK4=1.0;
+  y_RK2=-1.0;
+  y_RK4=-1.0;
   for(i=0;i<n_step;i++){    
     printf("%f %.15e %.15e %.15e\n", t, exact_sol_y(t), y_RK2, y_RK4);
     y_RK2 += RK2_step(step, t, y_RK2, func_y);
@@ -52,12 +52,12 @@ double RK4_step(double step, double t, double y, derivative dev){
 
 double func_y(double t, double y){
   double v;
-  v = y + t*t ;
+  v =sin(t)+t ;
   return v;
 }
 
 double exact_sol_y(double t){
-  return 3.0*exp(t) - t*t -2*t -2;
+    return -cos(t)+(pow(t,2)/2);
 }
 
 
