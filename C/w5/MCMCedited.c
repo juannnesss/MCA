@@ -6,7 +6,7 @@ void load_data(char *filein, double *x, double *y, int n_points);
 int count_lines(char *filein);
 double * init_array(int n_points);
 void print_array(double *x, int n_points);
-void model(double A, double B, double *x_in, double *y_model, int n);
+void model(double A, double B,double C,double D, double *x_in, double *y_model, int n);
 double loglikelihood(double *y_obs, double *y_model, int n);
 #define MIN(x,y) x<y?x:y
 
@@ -18,6 +18,8 @@ int main(int argc, char **argv){
   int n_steps = 10000;
   double *A;
   double *B;
+    double *C;
+    double*D;
   double *loglike;
   double loglike_prime;
   double loglike_here;
@@ -37,18 +39,24 @@ int main(int argc, char **argv){
   /*initialize chains*/
   A = init_array(n_steps);
   B = init_array(n_steps);
+    C=init_array(n_steps);
+    D=init_array(n_steps);
+    
   loglike = init_array(n_steps);
 
   /*first step*/
   A[0] = 10.0;
   B[0] = 10.0;
-  model(A[0], B[0], x, y_model, n_points);
+  C[0] = 10.0;
+  D[0] = 10.0;
+  
+  model(A[0], B[0],C[0],D[0] , x, y_model, n_points);
   loglike[0] = loglikelihood(y, y_model, n_points);
 
   for(i=1;i<n_steps;i++){
     A[i] = new_value(A[i-1], 0.1);
     B[i] = new_value(B[i-1], 0.1);
-    model(A[i], B[i], x, y_model, n_points);
+    model(A[i], B[i],C[i],D[i], x, y_model, n_points);
     loglike[i] = loglikelihood(y, y_model, n_points);    
 
     r = MIN(1.0, exp(loglike[i] - loglike[i-1]));
@@ -75,10 +83,10 @@ double new_value(double x, double size){
   }while(y<0);
   return y;
 }
-void model(double A, double B, double *x_in, double *y_model, int n){
+void model(double A, double B,double C,double D, double *x_in, double *y_model, int n){
   int i;
   for(i=0;i<n;i++){
-    y_model[i] = A * exp( -(x_in[i] * x_in[i])/(2.0 * pow(B,2)));
+    y_model[i] = A * exp( -(x_in[i] * x_in[i])/(2.0 * pow(B,2)))+(C*x_in[i])+D;
   }
 }
 
