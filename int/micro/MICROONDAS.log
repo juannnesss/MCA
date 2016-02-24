@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 FEB 2016 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  17 FEB 2016 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -378,56 +378,123 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 8.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks22
+\ex@=\dimen105
+)
+LaTeX Info: Redefining \text on input line 39.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box43
+\strutbox@=\box44
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
+\dotsspace@=\muskip11
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks23
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks24
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks25
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 9.
 
 
 Class revtex4-1 Warning: Repair the float package.
 
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 8.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 8.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 8.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 8.
-(./MICROONDAS.aux)
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 9.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 9.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 9.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 9.
+(./MICROONDAS.aux
+
+LaTeX Warning: Label `leysnell' multiply defined.
+
+
+LaTeX Warning: Label `angulo' multiply defined.
+
+)
 \openout1 = `MICROONDAS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Info: Redefining \celsius on input line 8.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Info: Redefining \celsius on input line 9.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 9.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 8.
-Package gensymb Info: Using \Omega for \ohm on input line 8.
+LaTeX Info: Redefining \ohm on input line 9.
+Package gensymb Info: Using \Omega for \ohm on input line 9.
 
 Package gensymb Warning: Not defining \micro.
 
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count99
-\scratchdimen=\dimen105
-\scratchbox=\box43
-\nofMPsegments=\count100
-\nofMParguments=\count101
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count102
-\MPscratchDim=\dimen106
-\MPnumerator=\count103
-\makeMPintoPDFobject=\count104
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count111
+\scratchdimen=\dimen114
+\scratchbox=\box45
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen115
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -478,78 +545,197 @@ e
 ))
 \openout3 = `MICROONDASNotes.bib'.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 26.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 36.
 
-Underfull \hbox (badness 4072) in paragraph at lines 34--37
-[]\OT1/cmr/m/n/10 SE DE-BE HA-CER UN MAR-CO TEO-RI-CO
+Underfull \hbox (badness 3635) in paragraph at lines 35--37
+[]\OT1/cmr/m/n/10 En es-te ex-pe-ri-men-to se tra-ba-jar^^San con on-das
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 34--37
-\OT1/cmr/m/n/10 ZA-CION, RE-SUL-TA-DOS ES-PE-RA-DOS DE LOS
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
  []
 
 <monta1.png, id=1, 362.85562pt x 201.25188pt>
 File: monta1.png Graphic file (type png)
  <use monta1.png>
-Package pdftex.def Info: monta1.png used on input line 42.
+Package pdftex.def Info: monta1.png used on input line 95.
 (pdftex.def)             Requested size: 362.85474pt x 201.25137pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 92--99
 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 62.
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+
+LaTeX Warning: File `Montaje 2.png' not found on input line 108.
+
+<Montaje 2.png, id=19, 233.37187pt x 292.09125pt>
+File: Montaje 2.png Graphic file (type png)
+ <use Montaje 2.png>
+Package pdftex.def Info: Montaje 2.png used on input line 108.
+(pdftex.def)             Requested size: 233.37129pt x 292.09052pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+
+LaTeX Warning: File `Montaje 4.png' not found on input line 121.
+
+<Montaje 4.png, id=20, 237.88875pt x 140.77594pt>
+File: Montaje 4.png Graphic file (type png)
+ <use Montaje 4.png>
+Package pdftex.def Info: Montaje 4.png used on input line 121.
+(pdftex.def)             Requested size: 237.88815pt x 140.77557pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--125
+
+ []
+
+<exp5.png, id=21, 230.8625pt x 120.95187pt>
+File: exp5.png Graphic file (type png)
+ <use exp5.png>
+Package pdftex.def Info: exp5.png used on input line 131.
+(pdftex.def)             Requested size: 230.86192pt x 120.95157pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+LaTeX Warning: File `Montaje 6.png' not found on input line 141.
+
+<Montaje 6.png, id=22, 232.61906pt x 143.78719pt>
+File: Montaje 6.png Graphic file (type png)
+ <use Montaje 6.png>
+Package pdftex.def Info: Montaje 6.png used on input line 141.
+(pdftex.def)             Requested size: 232.61848pt x 143.78683pt.
+ [2 <./monta1.png> <./Montaje 2.png> <./Montaje 4.png> <./exp5.png> <./Montaje 
+6.png>]
+<exp7.png, id=28, 228.855pt x 169.63374pt>
+File: exp7.png Graphic file (type png)
+ <use exp7.png>
+Package pdftex.def Info: exp7.png used on input line 161.
+(pdftex.def)             Requested size: 228.85443pt x 169.63332pt.
+
+<exp9.png, id=29, 225.84375pt x 188.705pt>
+File: exp9.png Graphic file (type png)
+ <use exp9.png>
+Package pdftex.def Info: exp9.png used on input line 176.
+(pdftex.def)             Requested size: 225.84319pt x 188.70453pt.
+
+<exp11.png, id=30, 226.8475pt x 144.54pt>
+File: exp11.png Graphic file (type png)
+ <use exp11.png>
+Package pdftex.def Info: exp11.png used on input line 190.
+(pdftex.def)             Requested size: 226.84694pt x 144.53963pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 205.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 62.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 205.
 
-<grmonta1_1.png, id=3, 433.62pt x 289.08pt>
+<grmonta1_1.png, id=31, 433.62pt x 289.08pt>
 File: grmonta1_1.png Graphic file (type png)
  <use grmonta1_1.png>
-Package pdftex.def Info: grmonta1_1.png used on input line 78.
+Package pdftex.def Info: grmonta1_1.png used on input line 221.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
- [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./mo
-nta1.png> <./grmonta1_1.png>] <grmonta1_2.png, id=19, 433.62pt x 289.08pt>
-File: grmonta1_2.png Graphic file (type png)
+ [3 <./exp7.png> <./exp9.png> <./exp11.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
-<use grmonta1_2.png>
-Package pdftex.def Info: grmonta1_2.png used on input line 121.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+<grmonta1_2.png, id=40, 433.62pt x 289.08pt>
+File: grmonta1_2.png Graphic file (type png)
+ <use grmonta1_2.png>
+Package pdftex.def Info: grmonta1_2.png used on input line 319.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+ [4 <./grmonta1_1.png>] <polari.png, id=46, 198.7425pt x 119.44624pt>
+File: polari.png Graphic file (type png)
+ <use polari.png>
+Package pdftex.def Info: polari.png used on input line 327.
+(pdftex.def)             Requested size: 198.742pt x 119.44594pt.
+
+<grmonta6.png, id=47, 433.62pt x 289.08pt>
+File: grmonta6.png Graphic file (type png)
+ <use grmonta6.png>
+Package pdftex.def Info: grmonta6.png used on input line 403.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+ [5 <./grmonta1_2.png> <./polari.png> <./grmonta6.png>]
+<grmonta11.png, id=54, 433.62pt x 289.08pt>
+File: grmonta11.png Graphic file (type png)
+ <use grmonta11.png>
+Package pdftex.def Info: grmonta11.png used on input line 493.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+ [6 <./grmonta11.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+ 
+ []
 
 No file MICROONDAS.bbl.
-[2 <./grmonta1_2.png>] (./MICROONDAS.aux) ) 
+[7] (./MICROONDAS.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4601 strings out of 493089
- 61174 string characters out of 6134842
- 157701 words of memory out of 5000000
- 8032 multiletter control sequences out of 15000+600000
- 6721 words of font info for 24 fonts, out of 8000000 for 9000
+ 5279 strings out of 493089
+ 69065 string characters out of 6134842
+ 167644 words of memory out of 5000000
+ 8684 multiletter control sequences out of 15000+600000
+ 7627 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,30p,523b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmti9.pfb>
-Output written on MICROONDAS.pdf (2 pages, 175537 bytes).
+ 38i,12n,30p,653b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on MICROONDAS.pdf (7 pages, 466721 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 112 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
