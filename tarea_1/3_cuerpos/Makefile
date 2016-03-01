@@ -1,21 +1,14 @@
 ##### Crea un pdf con las figuras
-Figuras.pdf : dats
+Figuras.pdf : *.png *.dat *.x
 	python figuras.py
 ##### Borra archivos creados
-.PHONY : clean
 clean :
-	rm *.x *.dat *~ *#
-
-##### Variable datos 
-dats : fig9.dat fig12.dat fig15.dat fig16.dat fig17.dat
-
+	rm *.x *.dat *.png
 ##### Datos Figura 9
 9.x : fig9.c
 	gcc $< -lm -o $@
-
 fig9.dat : 9.x
 	./$< > $@ 
-
 ##### Datos Figura 12
 12.x : fig12.c
 	gcc $< -lm -o $@

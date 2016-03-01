@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.backends.backend_pdf import PdfPages
+'''from matplotlib.backends.backend_pdf import PdfPages'''
 
 # FIGURA 9
 data=np.genfromtxt('fig9.dat')
@@ -19,6 +19,7 @@ plt.xlim((-3,3))
 plt.ylabel(r'$p_3$')
 plt.xlabel(r'$q_3$')
 plt.title(r'Figura 9 RK4')
+plt.savefig('fig9.png')
 
 
 #FIGURA 10
@@ -39,7 +40,7 @@ plt.xlim((-2.8,-0.8))
 plt.ylabel(r'$p_3$')
 plt.xlabel(r'$q_3$')
 plt.title(r'Figura 10 RK4')
-
+plt.savefig('fig10.png')
 
 #FIGURA 11
 fig11=plt.figure(figsize=(12,20))
@@ -57,6 +58,7 @@ plt.xlim((-0.2,0.8))
 plt.ylabel(r'$p_3$')
 plt.xlabel(r'$q_3$')
 plt.title(r'Figura 11 RK4')
+plt.savefig('fig11.png')
 
 
 #FIGURA 12
@@ -68,7 +70,7 @@ plt.xlim((-2,2))
 plt.ylabel(r'$p_3$')
 plt.xlabel(r'$q_3$')
 plt.title(r'Figura 12')
-
+plt.savefig('fig12.png')
 #FIGURA 13
 fig13=plt.figure(figsize=(10,10))
 plt.scatter(data[:,0],data[:,1],s=1,c='k')
@@ -77,7 +79,7 @@ plt.xlim((0.2,0.7))
 plt.ylabel(r'$p_3$')
 plt.xlabel(r'$q_3$')
 plt.title(r'Figura 13')
-
+plt.savefig('fig13.png')
 #FIGURA 14
 fig14=plt.figure(figsize=(10,10))
 plt.scatter(data[:,0],data[:,1],s=1,c='k')
@@ -86,7 +88,7 @@ plt.xlim((-0.08,0.08))
 plt.ylabel(r'$p_3$')
 plt.xlabel(r'$q_3$')
 plt.title(r'Figura 14')
-
+plt.savefig('fig14.png')
 #FIGURA 15
 data=np.genfromtxt('fig15.dat')
 fig15=plt.figure(figsize=(10,10))
@@ -96,7 +98,7 @@ plt.xlim((-3,3))
 plt.ylabel(r'$p_3$')
 plt.xlabel(r'$q_3$')
 plt.title(r'Figura 15')
-
+plt.savefig('fig15.png')
 #FIGURA 16
 data=np.genfromtxt('fig16.dat')
 fig16=plt.figure(figsize=(10,10))
@@ -106,7 +108,7 @@ plt.xlim((-3,3))
 plt.ylabel(r'$p_3$')
 plt.xlabel(r'$q_3$')
 plt.title(r'Figura 16')
-
+plt.savefig('fig16.png')
 #FIGURA 17
 data=np.genfromtxt('fig17.dat')
 fig17=plt.figure(figsize=(15,15))
@@ -120,7 +122,8 @@ plt.plot(data[:,2],data[:,1],c='k')
 plt.ylabel(r'E')
 plt.xlabel(r'$t$')
 plt.title(r'Symplectic Integrator')
-
+plt.savefig('fig17.png')
+'''
 #Guarda imagenes en un pdf
 pdf=PdfPages('Figuras.pdf')
 pdf.savefig(fig9)
@@ -136,3 +139,4 @@ pdf.savefig(fig16)
 print ('llega aca')
 pdf.savefig(fig17)
 pdf.close()
+'''
