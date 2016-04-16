@@ -61,14 +61,17 @@ ppmaxf(1)=1\\
 ppmaxf(i+1)=1 si b[i]$\leq$ 0\\
 \tab ppmaxf(i+1) si b[i]$>$0\\
 Estructura de datos\\
+Se requiere solo guardar p, q, r, l \\
+pro(r,s) : "b[r..r+s-1] es subarreglo", $0\leq r \leq r+s-1 \leq n$
 \textbf{Codigo}\\
 i,p,q:=1,1,1\\
 r,l:=0,1\\
-$\{$ Inv P: 1 $\leq$ i $\leq$ n $\wedge p=ppmax(i) \wedge q = ppmaxf(i) \}$\\ 
+$\{$ Inv P: 1 $\leq$ i $\leq$ n $\wedge p=ppmax(i) \wedge q = ppmaxf(i) \wedge pro(r,l) \}$\\ 
 do \\
 \tab i $\neq$ n $\rightarrow$ i=i+1\\
 \tab \tab if b[i]$>0$ then q:=qb[i];l=l+1 else q:=1;l=1 fi;\\
 \tab \tab if $q>p$ then p=q;r:=i-l-1\\
 od\\
+$\{$ Pos: p=ppmax(n) $\wedge$ pro(r,l) $\}$
 
 \end{document}
