@@ -2,6 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{float}
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 \begin{document}
 
@@ -12,66 +14,74 @@ Nombre: Juan Sebastian Vargas\\
 Fecha: 4/05/16
 
 \subsection*{Punto 1}
-\subsubsection*{1.a}
-[Ctx C: A:[0..n-1]:\textbf{int} $\wedge$ ($\forall k | 0\leq k < n$ :A[k]=$a_k$)$\wedge$ b: int $\wedge n \geq 0$ \\
-i,z:=n-2,A[i+1]\\
-$\{$ Inv P: 0 $\leq$ i $<$ n $\wedge$ $z*b^i = (+k | i \leq k < n : a_k*b^k$) $\}$\\
-$\{$cota t: i $\}$\\ 
-do \\
-\tab i $<$ n-1 $\wedge$ i $\geq$ 0 $\rightarrow$ z=A[i]+$z*b$;i=i-1\\
-od\\
-$\{R$: z = P.b $\}$\\
-]
-\subsubsection*{1.b}
-la técnica que se uso para obtener la forma de P seria la de 
-Apretar el cerco, conforme i cambia, P también, y con esto el producto $z*b^i$ también cambia, el intervalo en el que varia k se hace mayor, hasta que al final tenemos la definición del polinomio 
-\subsubsection*{1.c}
-el invariante siempre va a ser valido, para el caso inicial, cuando i=n-2 tenemos que;
-$zb^{n-2}=\sum_{k=n-2}^{n-1} a_kb^k=a_{n-2}b^{n-2}+a_{n-1}b^{n-1}$, pero z se puede escribir inductivamente $z=a_{n-2}+a_{n-1}b$, y de esta manera tenemos que: 
-$zb^{n-2}=(a_{n-2}+a_{n-1}b)b^{n-2}=a_{n-2}b^{n-2}+a_{n-1}b^{n-1}$, facilmente demostrable por induccion vemos como el invariante aplica siempre.
-\subsubsection*{1.d}
-si definimos la multiplicacion como operacion basica obtenemos que la complejidad temporal es de O(n), ya que en cada paso del DO se debe hacer una multiplicacion y suma, operaciones basicas, que se repiten n veces
+\subsubsection*{Floyd-Warshall}
+Para Solucionar este problema se utilizaria el mismo algoritmodescrito en \ref{FW}, donde $D^*$ es la matriz que contiene el costo minimo de los viajes. 
+
+\begin{figure}[H]
+\begin{center}
+ \scalebox{0.5}{\includegraphics{FW.png}} 
+ \caption{Floyd-Warshall ejemplo libro}
+ \label{FW}
+ \end{center}
+\end{figure}
+si se necesitara encontrar y reconstruir ese camino, se haria el mismo algoritmo, solo que actualizando una matriz tal que:
+
+\begin{figure}[H]
+\begin{center}
+ \scalebox{0.5}{\includegraphics{intmd.png}} 
+ \caption{Matriz para reconstruir el camino de costo minimo}
+ \label{intmd}
+ \end{center}
+\end{figure}
+ 
+ Para la complejidad temporal podemos encontrarla facilmente, como vemos en el algoritmo variamos i, j y k hasta n, donde n es el numero total de Nodos, y $T_{FW}=O(n^3)$, para la comlejidad Espacial tenemos guardamos una matriz de $nxn$ y es por esto que $S_{FW}=O(n^2)$
+
+\subsubsection*{Dijkstra}
+el algoritmo que me encuentra la ruta optima de un nodo f hasta el resto de nodos es: 
+
+\begin{figure}[H]
+\begin{center}
+ \scalebox{0.5}{\includegraphics{dijkstra.png}} 
+ \caption{Algoritmo de Dijkstra}
+ \label{dijkstra}
+ \end{center}
+\end{figure}
+
+donde la complejidad temporal depende de dos partes, la inicializacion y las iteraciones, la inicializacion es el primer for que llena el df, y las iteraciones son los ciclos que siguen.
+\begin{equation}
+T_D=T(Ini)+T(ciclos)=O(n)+O(n)[T(Escoja_min)+T(eliminar)]+O(e)
+\end{equation}
+Donde $T(Escoja_min)=O(n)$, ya que existen n diferentes nodos, teniendo todo en cuenta se obtiene que
+\begin{equation}
+T_D=O(n)[O(n)]+O(e)=O(n^2+e)
+\end{equation}
+pero esta seria la complejidad temporal para encontrar el camino minimo de un nodo dado f a el resto de los nodos del grafo, para obtener la totalidad de caminos minimos de todos los nodos hacia todos los nodos, debemos hacer este proceso para todos los nodos, en este casi la complejidad seria entonces:
+\begin{equation}
+T_{TD}=O(n(n^2+e))=O(n^3)
+\end{equation}
+donde se asumio que $e\ll n^3$, y para la espacial se guardara n vectores de la manera $di:i\in{1..f..n}$, y de esta manera $S_D=O(n^2)$
+
+
 \subsection*{Punto 2}
+
 \subsubsection*{2.a}
-
-$\{$ Inv P: 0 $\leq$ i $<$ n $\}$\\
-$\{$cota t: i $\}$\\ 
-
+Para modelar este problema de esta manera tenemos un grafo $G(V,E,c)$debemos y definir cuando se llega a un estado de solucion, y esto pasa cuando:
+\begin{equation}
+v\in V: P=\sum_{i=1}^{n} c^v_i
+\end{equation}
+donde: 
+\begin{equation}
+c^v_i= \left\{ \begin{array}{lcc}
+             c_i &   si  & v_i esta llena en v \\
+             \\ 0 &  si & v_i esta vacia en v \\
+              
+             \end{array}
+   \right.
+\end{equation} 
 \subsubsection*{2.b}
-Se utilizo la tecnica de Apretar el Cerco, ya que este problema se puede ver como un conjunto de valores que hace falta con calcular, que en cada iteracion se disminuye el numero de valores que falta por calcular, de este mismo modo y logica se escogio la cota, un numero que va disminuyendo y asi habra terminacion
-\subsubsection*{2.c}
-[Ctx: N:nat $\wedge N>0 \wedge$ f,h:[0..N-1]:\textbf{int} $\wedge$ f=F \\
-i,h[0]:=1,f[0]\\
-$\{$ Inv P: 0 $\leq$ i $<$ n $\}$\\
-$\{$cota t: i $\}$\\ 
-do \\
-\tab i $\neq$ N $\rightarrow$ h[i]=f[i-1]-h[i-1];i=i+1\\
-od\\
-$\{$ Pos R: $f[k]=\sum_{k=0}^{N-1} h[i] \}$\\
-]
-\subsubsection*{2.d}
-Para la complejidad espacial tenemos dos arreglos de tamaños N, pero el orden solo seria de N, para la complejidad temporal tenemos un ciclo, y en cada pasada del ciclo se hacen dos sumas y es por esto que la complejidad 
-seria de O($N*2*Tiempo(suma)$)=O($N*T(suma)$) si suponemos que T(suma)=1, esto es, el tiempo de una suma, obtenemos O(N) 
+
+
+
 \subsection*{Punto 3}
-Lenguaje se encuentra en el enunciado\\
-Recurrencia:\\
-pmax(1)=1\\
-pmax(i+1)= max$\{$ pmax(i),ppmaxf(i+1)$\}$\\
-ppmaxf(1)=1\\
-ppmaxf(i+1)=1 si b[i]$\leq$ 0\\
-\tab ppmaxf(i+1) si b[i]$>$0\\
-Estructura de datos\\
-Se requiere solo guardar p, q, r, l \\
-pro(r,s) : "b[r..r+s-1] es subarreglo", $0\leq r \leq r+s-1 \leq n$
-\textbf{Codigo}\\
-i,p,q:=1,1,1\\
-r,l:=0,1\\
-$\{$ Inv P: 1 $\leq$ i $\leq$ n $\wedge p=ppmax(i) \wedge q = ppmaxf(i) \wedge pro(r,l) \}$\\ 
-do \\
-\tab i $\neq$ n $\rightarrow$ i=i+1\\
-\tab \tab if b[i]$>0$ then q:=qb[i];l=l+1 else q:=1;l=1 fi;\\
-\tab \tab if $q>p$ then p=q;r:=i-l-1\\
-od\\
-$\{$ Pos: p=ppmax(n) $\wedge$ pro(r,l) $\}$
 
 \end{document}
