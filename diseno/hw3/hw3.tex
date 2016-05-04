@@ -4,6 +4,8 @@
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{float}
+
+
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 \begin{document}
 
@@ -65,23 +67,54 @@ donde se asumio que $e\ll n^3$, y para la espacial se guardara n vectores de la 
 \subsection*{Punto 2}
 
 \subsubsection*{2.a}
-Para modelar este problema de esta manera tenemos un grafo $G(V,E,c)$debemos y definir cuando se llega a un estado de solucion, y esto pasa cuando:
+[para evitar errores se tiene que las vasijas seran $va_i$]Para modelar este problema de esta manera tenemos un grafo $G(V,E)$, con $V:= \{<v_1,..,v_n>|0\leq v_1 \leq c_1,..,0\leq v_n \leq c_n\}$ y debemos definir cuando se llega a un estado de solucion, y esto pasa cuando:
 \begin{equation}
-v\in V: P=\sum_{i=1}^{n} c^v_i
+v_{final}\in V| v_k=P, k\in {1..n}
 \end{equation}
-donde: 
+y los arcos se definen como los cambios que se hacen en los estados de las vasijas, asi:
 \begin{equation}
-c^v_i= \left\{ \begin{array}{lcc}
-             c_i &   si  & v_i esta llena en v \\
-             \\ 0 &  si & v_i esta vacia en v \\
+<v_1,..,v_n>\rightarrow_{accion} <v_1',..,v_n'>
+\end{equation}
+y accion sera el cambio que se hagan en las vasijas, y como las acciones que se pueden realizar son llenado y trasvasado tenemos que:
+
+\begin{equation}
+<v_1,..,v_n>\rightarrow_{Lk} <v_1,..,c_k,..,v_n>
+\end{equation}
+\begin{equation}
+<v_1,..,v_n>\rightarrow_{Tki} \left\{ \begin{array}{lcc}
+             <v_1,..,0,..,v_i+v_k,..,v_n> &   si  & v_i+v_k\leq c_i \\
+             \\ <v_1,..,0,..,c_i,..,v_n> &  si & v_i+v_k\geq c_i 
               
              \end{array}
    \right.
-\end{equation} 
+\end{equation}
 \subsubsection*{2.b}
+Haremos uns busqueda en el grafo, y se buscara $v_{final} \in V$ una solucion que cumpla con la condicion anterior, apartir de un nodo $v_{inicial} \in V$.
+\paragraph{Floyd-Marshall}
 
 
 
 \subsection*{Punto 3}
-
+Para este punto se deben notar un par de cosas interesantes, si $A=\{a_1,..,a_n\}$ es el conjunto de actividades, si escogemos un $a_i$ arbitrario, conocemos $B_i$, como $a_i \notin B_i$, ya que $B_i$ son las actividades que deben hacerce antes de $a_i$.
+lo anterior nos lleva a decir que sea $a_k$ la ultima actividad a realizar, $|B_k|<n$, y una afirmacion mas fuerte aun pero igual de valida, $|B_k|=n-1$, $B_k+\{a_k\}=A$.
+Para saber si el proyecto se puede hacer, se debe poder ordenar $A=\{a_k\}+\cup_{i=1}^{n} B_i$, con $|B_{i+1}|-|B_i|=1$. y es por esto que el problema se reduce a ordenar A y despues validar si estan las n actividades.
+en el programa se usara la funcion $C(a_i)=B_i$, que me retorna el conjunto de actividades previas a $a_i$.
+se ordenara una lista con la funcion $Orden(A)$ que me entrega $A'$ ordenado mediante seleccion, comparando el valor de $|C(a_i)|$, este ordenamiento tiene la complejidad normal para este algoritmo de ordenamiento $T=O(n^2)$
+veamos como nos queda $A'$
+\begin{equation}
+Orden(A)=A'=[a'_1..a'_n], \text{ donde se cumple que: } |C(a'_1)|<..<|C(a'_n)|
+\end{equation}
+El algoritmo es:
+\\\\
+proc actividad (A=[$a_1..a_n$])  \\
+A':=Orden(A);\\
+po,i:=true,1;\\
+do i $<$ n $\rightarrow$ $x,y:=|C(A'[i]|,|C(A'[i+1]|$;\\
+\tab \tab IF $y-x\neq 1 \rightarrow po=\text{false }$FI\\
+od\\
+$\{$Pos: po=true $\bigvee$ po=false $\}$
+Para la complejidad del algoritmo es la siguiente:
+\begin{equation}
+T_3=T(Orden)+T(ciclo)=O(n^2)+O(n)=O(n^2)
+\end{equation}
 \end{document}

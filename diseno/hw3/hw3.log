@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 MAY 2016 04:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 MAY 2016 07:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,20 +361,20 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `hw3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -440,13 +440,13 @@ e
 <FW.png, id=1, 661.97313pt x 500.87125pt>
 File: FW.png Graphic file (type png)
  <use FW.png>
-Package pdftex.def Info: FW.png used on input line 22.
+Package pdftex.def Info: FW.png used on input line 24.
 (pdftex.def)             Requested size: 661.97151pt x 500.87001pt.
 
 <intmd.png, id=3, 647.92062pt x 106.3975pt>
 File: intmd.png Graphic file (type png)
  <use intmd.png>
-Package pdftex.def Info: intmd.png used on input line 31.
+Package pdftex.def Info: intmd.png used on input line 33.
 (pdftex.def)             Requested size: 647.91904pt x 106.39723pt.
  [1
 
@@ -455,27 +455,32 @@ g>]
 <dijkstra.png, id=15, 622.325pt x 373.89688pt>
 File: dijkstra.png Graphic file (type png)
  <use dijkstra.png>
-Package pdftex.def Info: dijkstra.png used on input line 44.
+Package pdftex.def Info: dijkstra.png used on input line 46.
 (pdftex.def)             Requested size: 622.32347pt x 373.89597pt.
  [2 <./intmd.png> <./dijkstra.png>]
-Overfull \hbox (14.25995pt too wide) in paragraph at lines 68--69
-[]\OT1/cmr/m/n/10 Para mo-de-lar es-te pro-ble-ma de es-ta ma-ne-ra te-ne-mos u
-n gra-fo $\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V; E; c\OT1/cmr/m
-/n/10 )$debemos
+Overfull \hbox (1.14145pt too wide) in paragraph at lines 98--104
+[]\OT1/cmr/m/n/10 Para es-te pun-to se de-ben no-tar un par de co-sas in-tere-s
+an-tes, si $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/i
+t/10 a[]; ::; a[]\OMS/cmsy/m/n/10 g$
  []
 
-[3] (./hw3.aux
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 106--117
+
+ []
+
+[4] (./hw3.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 3141 strings out of 493089
- 41005 string characters out of 6134842
- 110356 words of memory out of 5000000
- 6594 multiletter control sequences out of 15000+600000
+ 3148 strings out of 493089
+ 41101 string characters out of 6134842
+ 115356 words of memory out of 5000000
+ 6601 multiletter control sequences out of 15000+600000
  5612 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,30p,314b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,30p,314b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
 b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -485,10 +490,10 @@ sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on hw3.pdf (3 pages, 374266 bytes).
+Output written on hw3.pdf (4 pages, 383680 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
