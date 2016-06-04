@@ -19,7 +19,7 @@ class ProblemaC
         {BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
         String line;
         line = stdin.readLine();
-        input = (line.split(" ");}
+        input = line.split(" ");}
         catch (Exception e)
         {}
         //init varibles
